@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Minha Aplicação</string>
-    <string name="button">Clica em mim</string>
-    <string name="welcome">Olá mundo</string>
+
+    <string name="hint_username">O teu nome de utilizador é aqui.</string>
+    <string name="hint_password">A tua password é aqui.</string>
+
+    <string name="error_invalid_credentials">Credenciais invalidas</string>
+
+    <string name="save_credentials">Guardar credenciais</string>
+
+    <string name="action_authenticate">Autenticar</string>
+
+    <string name="click_me">Clica em mim</string>
+    <string name="welcome">Bem-vindo</string>
+    <string name= "open_camera">Abrir Câmara</string>
+    <string name="open_details">Abrir Detalhes</string>
+    <string name="details">Detalhes</string>
+
+    <string name="time_remaining">Faltam %d segundos</string>
+    <string name="time_done">Acabou</string>
+    <string name="ShowDialog">Mostrar Diálogo</string>
+    <string name="ShowSnackBar">Mostrar barra snacks</string>
+    <string name="dialog_title">Bem</string>
+    <string name="dialog_message" >Bom curso</string>
+    <string name="dialog_action_ok" >ok</string>
+    <string name="dialog_action_ok_selected">Selecionou ok</string>
+    <string name="dialog_action_cancel">cancelar</string>
+    <string name="snackbar_message">Que bonito</string>
+    <string name="snackbar_action_thanks">Obrigado</string>
+    <string name="snackbar_action_thanks_selected">Selecionou obrigado</string>
+    <string name="action_save_credentials" />
+    <string name="action_login" />
+    <string name="error_credentials_empty_password" />
+    <string name="error_credentials_empty_username" />
+    <string name="error_credentials_mismatch" />
 </resources>

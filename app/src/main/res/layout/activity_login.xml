@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    android:gravity="center"
+    android:padding="16dp">
+    
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src = "@drawable/ic_launcher_foreground"/>
+
+    <EditText
+        android:id="@+id/tet_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_username"
+        android:inputType="textPersonName"
+        android:textColor = "@color/white"
+        android:textColorHint="@android:color/darker_gray"/>
+
+    <EditText
+        android:id="@+id/tet_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:textColor = "@color/white"
+        android:textColorHint="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/error_invalid_credentials"
+        android:visibility="invisible"
+        android:textColor = "@android:color/holo_red_dark"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_credentials" />
+
+    <Button
+        android:id="@+id/btn_auth"
+        android:layout_width="wrap_content"
+        android:minWidth="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/action_authenticate"
+        android:textColor = "@color/purple_700"
+        android:textStyle = "bold"
+        android:textSize="21sp"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/white"/>
+
+</LinearLayout>
