@@ -6,9 +6,11 @@
 
     <string name="error_invalid_credentials">Invalid credentials</string>
 
-    <string name="save_credentials">Save credentials</string>
-
-    <string name="action_authenticate">Authenticate</string>
+    <string name="action_save_credentials">Save credentials</string>
+    <string name="error_credentials_empty_password">Your password is empty</string>
+    <string name="error_credentials_empty_username">Your username is empty </string>
+    <string name="error_credentials_mismatch">Invalid username and/or password</string>
+    <string name="action_login">Authenticate</string>
 
     <string name="welcome">Welcome</string>
     <string name="click_me">Click Me</string>
@@ -20,6 +22,7 @@
     <string name="time_done">Finished!</string>
     <string name="ShowDialog">Show Dialog</string>
     <string name="ShowSnackBar">Show Snack-bar</string>
+    <string name="start_Timer">Start</string>
     <string name="dialog_title" >Good</string>
     <string name="dialog_message" >Nice course</string>
     <string name="dialog_action_ok" >OK</string>
@@ -29,10 +32,8 @@
     <string name="snackbar_message">What a beauty</string>
     <string name="snackbar_action_thanks">Thank you</string>
     <string name="snackbar_action_thanks_selected">You selected Thank you!</string>
-    <string name="action_save_credentials" />
-    <string name="action_login" />
-    <string name="error_credentials_empty_password" />
-    <string name="error_credentials_empty_username" />
-    <string name="error_credentials_mismatch" />
+    <string name="evora">Evora</string>
+    <string name="_0">0</string>
+
 
 </resources>

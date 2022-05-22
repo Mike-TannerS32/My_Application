@@ -6,10 +6,12 @@
     <string name="hint_password">A tua password é aqui.</string>
 
     <string name="error_invalid_credentials">Credenciais invalidas</string>
+    <string name="action_save_credentials">Guardar credenciais</string>
+    <string name="error_credentials_empty_password" >A sua palavra chave está vazia</string>
+    <string name="error_credentials_empty_username" >O seu nome de utilizador está vazio</string>
+    <string name="error_credentials_mismatch" >Nome de utilizador e/ou palavra-chave vazios</string>
 
-    <string name="save_credentials">Guardar credenciais</string>
-
-    <string name="action_authenticate">Autenticar</string>
+    <string name="action_login">Autenticar</string>
 
     <string name="click_me">Clica em mim</string>
     <string name="welcome">Bem-vindo</string>
@@ -21,6 +23,7 @@
     <string name="time_done">Acabou</string>
     <string name="ShowDialog">Mostrar Diálogo</string>
     <string name="ShowSnackBar">Mostrar barra snacks</string>
+    <string name="start_Timer">Começo</string>
     <string name="dialog_title">Bem</string>
     <string name="dialog_message" >Bom curso</string>
     <string name="dialog_action_ok" >ok</string>
@@ -29,9 +32,7 @@
     <string name="snackbar_message">Que bonito</string>
     <string name="snackbar_action_thanks">Obrigado</string>
     <string name="snackbar_action_thanks_selected">Selecionou obrigado</string>
-    <string name="action_save_credentials" />
-    <string name="action_login" />
-    <string name="error_credentials_empty_password" />
-    <string name="error_credentials_empty_username" />
-    <string name="error_credentials_mismatch" />
+    <string name="evora">Evora</string>
+    <string name="_0">0</string>
+
 </resources>

@@ -5,11 +5,12 @@ import androidx.lifecycle.ViewModel
 
 class LoginViewModel : ViewModel() {
 
-    private val _loginResult = MutableLiveData<Boolean>();
+    private val _loginResult = MutableLiveData<Boolean>()
     val loginResultLiveData = _loginResult
 
-    fun areCredentialsValid(username: String,password: String): Boolean{
+    fun areCredentialsValid(username: String, password: String ){
+        //Ir ao servidor
 
-        return username == password
+        loginResultLiveData.postValue(username == password)
     }
 }
