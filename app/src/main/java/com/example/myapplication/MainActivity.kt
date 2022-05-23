@@ -7,7 +7,6 @@ import android.graphics.Bitmap
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.CountDownTimer
 import android.provider.MediaStore
 import android.util.Log
 import android.widget.Button
@@ -29,9 +28,6 @@ private const val REQUEST_READ_STORAGE = 500
 
 @Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
-
-    private lateinit var timer: CountDownTimer
-    private var untilFinished = 10000L
 
     private val viewModel  by viewModels<MainViewModel>()
 
@@ -61,24 +57,12 @@ class MainActivity : AppCompatActivity() {
 
         val tvStartTimer = findViewById<TextView>(R.id.tv_counter)
 
-        viewModel.timerLiveData.observe(this) { count ->
+        viewModel.timerLiveDate.observe(this) { count ->
             tvStartTimer.text = count.toString()
 
             if(count == 0L)
                 loadImage()
         }
-    }
-
-    override fun onResume() {
-        super.onResume()
-
-        startCountDownTimer(untilFinished)
-    }
-
-    override fun onPause() {
-        super.onPause()
-
-        timer.cancel()
     }
 
     @Deprecated("Deprecated in Java")
@@ -133,7 +117,7 @@ class MainActivity : AppCompatActivity() {
             return
         }
 
-        viewModel.startTimer(5000)
+        viewModel.startTimer(15000)
     }
 
     override fun onRequestPermissionsResult(
@@ -175,26 +159,9 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
-    private fun startCountDownTimer(time : Long){
-        timer = object: CountDownTimer(time, 1000) {
-
-            override fun onTick(millisUntilFinished: Long) {
-                untilFinished = millisUntilFinished
-                findViewById<TextView>(R.id.countdown).text = getString(R.string.time_remaining, (untilFinished / 1000))
-            }
-
-            override fun onFinish() {
-                findViewById<TextView>(R.id.countdown).text = getString(R.string.time_done)
-            }
-
-        }
-
-        timer.start()
-    }
-
     private fun loadImage(){
 
-        val file = File("file:///C:/Users/ASUS/Pictures/students_creed.webp")
+        val file = File("Internalstorage/Pictures/Screenshots/jesus.jpg")
 
         val uri = Uri.fromFile(file)
 
