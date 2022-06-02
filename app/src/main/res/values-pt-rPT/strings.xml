@@ -17,6 +17,7 @@
     <string name="welcome">Bem-vindo</string>
     <string name= "open_camera">Abrir Câmara</string>
     <string name="open_details">Abrir Detalhes</string>
+    <string name="open_list">Abrir Lista</string>
     <string name="details">Detalhes</string>
 
     <string name="time_remaining">Faltam %d segundos</string>

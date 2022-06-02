@@ -16,6 +16,7 @@
     <string name="click_me">Click Me</string>
     <string name= "open_camera">Open Camera</string>
     <string name="open_details">Open Details</string>
+    <string name="open_list">Open List</string>
     <string name="details">Details</string>
 
     <string name="time_remaining">Remaining %d seconds</string>

@@ -18,6 +18,8 @@ import androidx.appcompat.app.AlertDialog
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.google.android.material.snackbar.Snackbar
 import java.io.File
 
@@ -25,6 +27,7 @@ private const val TAG = "MainActivity"
 private const val REQUEST_IMAGE_CAPTURE = 100
 private const val REQUEST_READ_STORAGE = 500
 
+private const val FIFI= "https://github.com/android-training_program/aula5/blob/master/images/fifi.jpg?raw=true"
 
 @Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
@@ -39,8 +42,8 @@ class MainActivity : AppCompatActivity() {
             openNativeCamera()
         }
 
-        findViewById<Button>(R.id.open_details).setOnClickListener {
-            openDetailsActivity()
+        findViewById<Button>(R.id.open_list).setOnClickListener {
+            openListActivity()
         }
 
         findViewById<Button>(R.id.show_dialog).setOnClickListener{
@@ -54,6 +57,8 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.startTimer).setOnClickListener(){
             startTimer()
         }
+
+        Glide.with(this).load(FIFI).diskCacheStrategy(DiskCacheStrategy.ALL).fitCenter().into(findViewById(R.id.imageView))
 
         val tvStartTimer = findViewById<TextView>(R.id.tv_counter)
 
@@ -80,8 +85,8 @@ class MainActivity : AppCompatActivity() {
         startActivityForResult(intent, REQUEST_IMAGE_CAPTURE)
     }
 
-    private fun openDetailsActivity() {
-        val intent = Intent(this, DetailsActivity::class.java)
+    private fun openListActivity() {
+        val intent = Intent(this, ListActivty::class.java)
         startActivity(intent)
     }
 
@@ -161,7 +166,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun loadImage(){
 
-        val file = File("Internalstorage/Pictures/Screenshots/jesus.jpg")
+        val file = File("drawable/students_creed.webp")
 
         val uri = Uri.fromFile(file)
 
