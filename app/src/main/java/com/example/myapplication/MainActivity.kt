@@ -5,7 +5,6 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
@@ -15,6 +14,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -27,7 +27,7 @@ private const val TAG = "MainActivity"
 private const val REQUEST_IMAGE_CAPTURE = 100
 private const val REQUEST_READ_STORAGE = 500
 
-private const val FIFI= "https://github.com/android-training_program/aula5/blob/master/images/fifi.jpg?raw=true"
+private const val FIFI = "https://github.com/android-training_program/aula5/blob/master/images/fifi.jpg?raw=true"
 
 @Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
@@ -58,7 +58,11 @@ class MainActivity : AppCompatActivity() {
             startTimer()
         }
 
-        Glide.with(this).load(FIFI).diskCacheStrategy(DiskCacheStrategy.ALL).fitCenter().into(findViewById(R.id.imageView))
+        Glide.with(this)
+            .load(FIFI)
+            .diskCacheStrategy(DiskCacheStrategy.ALL)
+            .fitCenter()
+            .into(findViewById(R.id.imageView))
 
         val tvStartTimer = findViewById<TextView>(R.id.tv_counter)
 
@@ -86,7 +90,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun openListActivity() {
-        val intent = Intent(this, ListActivty::class.java)
+        val intent = Intent(this, ListActivity::class.java)
         startActivity(intent)
     }
 
