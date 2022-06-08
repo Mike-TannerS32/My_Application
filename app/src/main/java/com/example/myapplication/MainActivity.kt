@@ -8,9 +8,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
-import android.widget.Button
 import android.widget.ImageView
-import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
@@ -19,7 +17,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.bumptech.glide.Glide
-import com.bumptech.glide.load.engine.DiskCacheStrategy
+import com.example.myapplication.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
 import java.io.File
 
@@ -27,47 +25,47 @@ private const val TAG = "MainActivity"
 private const val REQUEST_IMAGE_CAPTURE = 100
 private const val REQUEST_READ_STORAGE = 500
 
-private const val FIFI = "https://github.com/android-training_program/aula5/blob/master/images/fifi.jpg?raw=true"
+
 
 @Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
 
     private val viewModel  by viewModels<MainViewModel>()
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        findViewById<Button>(R.id.open_camera).setOnClickListener {
+        binding.openCamera.setOnClickListener {
             openNativeCamera()
         }
 
-        findViewById<Button>(R.id.open_list).setOnClickListener {
+        binding.openList.setOnClickListener {
             openListActivity()
         }
 
-        findViewById<Button>(R.id.show_dialog).setOnClickListener{
+        binding.showDialog.setOnClickListener{
             showAppDialog()
         }
 
-        findViewById<Button>(R.id.show_snackbar).setOnClickListener(){
+        binding.showSnackbar.setOnClickListener(){
             showAppSnackbar()
         }
 
-        findViewById<Button>(R.id.startTimer).setOnClickListener(){
+        binding.startTimer.setOnClickListener(){
             startTimer()
         }
 
         Glide.with(this)
-            .load(FIFI)
-            .diskCacheStrategy(DiskCacheStrategy.ALL)
-            .fitCenter()
+            .load("https://github.com/nineinchmike21/My_Application/tree/master/app/src/main/res/drawable/students_creed.webphttps://github.com/nineinchmike21/My_Application/tree/master/app/src/main/res/drawable/students_creed.webp")
+            .placeholder(R.drawable.students_creed)
+            .dontAnimate()
             .into(findViewById(R.id.imageView))
 
-        val tvStartTimer = findViewById<TextView>(R.id.tv_counter)
-
         viewModel.timerLiveDate.observe(this) { count ->
-            tvStartTimer.text = count.toString()
+            binding.tvCounter.text = count.toString()
 
             if(count == 0L)
                 loadImage()

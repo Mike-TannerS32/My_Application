@@ -27,13 +27,13 @@ class ListActivity : AppCompatActivity(), DataRetriever {
     }
 
     override fun onDataFetchSuccess(breeds: List<Breed>) {
-        Log.d(TAG, "onDataFetchSuccess")
+        Log.d(TAG, "onDataFetchSuccess | ${breeds.size} new breeds")
 
         val adapter = findViewById<RecyclerView>(R.id.rv_breeds).adapter as BreedsAdapter
         adapter.submitList(breeds)
     }
 
     override fun onDataFetchedFailed() {
-        Log.d(TAG, "onDataFetchSuccess")
+        Log.d(TAG, "onDataFetchedFailed")
     }
 }
