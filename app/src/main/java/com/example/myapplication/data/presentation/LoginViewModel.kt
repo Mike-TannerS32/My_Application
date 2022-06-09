@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.data.presentation
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
