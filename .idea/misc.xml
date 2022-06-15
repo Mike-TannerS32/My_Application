@@ -11,6 +11,23 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyApplication/app/src/main/res/layout/item_breed.xml" value="0.19610507246376813" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/Documents/Faculdade/My_Application/app/src/main/res/drawable/bg_round.xml" value="0.183" />
+        <entry key="..\:/Users/ASUS/Documents/Faculdade/My_Application/app/src/main/res/drawable/ic_favorite_empty.xml" value="0.183" />
+        <entry key="..\:/Users/ASUS/Documents/Faculdade/My_Application/app/src/main/res/drawable/ic_favourite.xml" value="0.183" />
+        <entry key="..\:/Users/ASUS/Documents/Faculdade/My_Application/app/src/main/res/drawable/ic_home.xml" value="0.137" />
+        <entry key="..\:/Users/ASUS/Documents/Faculdade/My_Application/app/src/main/res/drawable/ic_info.xml" value="0.183" />
+        <entry key="..\:/Users/ASUS/Documents/Faculdade/My_Application/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.137" />
+        <entry key="..\:/Users/ASUS/Documents/Faculdade/My_Application/app/src/main/res/drawable/ic_paw.xml" value="0.183" />
+        <entry key="..\:/Users/ASUS/Documents/Faculdade/My_Application/app/src/main/res/layout/activity_details.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ASUS/Documents/Faculdade/My_Application/app/src/main/res/layout/activity_list.xml" value="0.1265625" />
+        <entry key="..\:/Users/ASUS/Documents/Faculdade/My_Application/app/src/main/res/layout/activity_login.xml" value="0.1265625" />
+        <entry key="..\:/Users/ASUS/Documents/Faculdade/My_Application/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ASUS/Documents/Faculdade/My_Application/app/src/main/res/layout/fragment_about.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ASUS/Documents/Faculdade/My_Application/app/src/main/res/layout/fragment_breeds.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ASUS/Documents/Faculdade/My_Application/app/src/main/res/layout/fragment_favourites.xml" value="0.1265625" />
+        <entry key="..\:/Users/ASUS/Documents/Faculdade/My_Application/app/src/main/res/layout/fragment_home.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ASUS/Documents/Faculdade/My_Application/app/src/main/res/layout/item_breed.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ASUS/Documents/Faculdade/My_Application/app/src/main/res/menu/main_menu.xml" value="0.2734375" />
       </map>
     </option>
   </component>

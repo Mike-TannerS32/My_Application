@@ -9,7 +9,7 @@ class LoginViewModel : ViewModel() {
     val loginResultLiveData = _loginResult
 
     fun areCredentialsValid(username: String, password: String ){
-        //Ir ao servidor
+
 
         loginResultLiveData.postValue(username == password)
     }

@@ -1,6 +1,8 @@
 package com.example.myapplication.data.model
 
+
 import com.squareup.moshi.Json
+
 
 data class Breed(
     @field:Json(name = "bred_for")
@@ -8,7 +10,7 @@ data class Breed(
     @field:Json(name = "bred_group")
     val bredGroup: String,
     @field:Json(name = "height")
-    val height: Height,
+    val height: Height?,
     @field:Json(name = "id")
     val id: String,
     @field:Json(name = "life_span")
@@ -20,5 +22,8 @@ data class Breed(
     @field:Json(name = "temperament")
     val temperament: String,
     @field:Json(name = "weight")
-    val weight: Weight
+    val weight: Weight?,
+
+    @Transient
+    val fav: Boolean = false
 )

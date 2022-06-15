@@ -22,18 +22,24 @@
 
     <string name="time_remaining">Faltam %d segundos</string>
     <string name="time_done">Acabou</string>
-    <string name="ShowDialog">Mostrar Diálogo</string>
-    <string name="ShowSnackBar">Mostrar barra snacks</string>
-    <string name="start_Timer">Começo</string>
+    <string name="show_dialog">Show dialog</string>
+    <string name="show_snackbar">Show snackbar</string>
+    <string name="start_timer">Começo</string>
     <string name="dialog_title">Bem</string>
-    <string name="dialog_message" >Bom curso</string>
+    <string name="dialog_message">Bom curso</string>
     <string name="dialog_action_ok" >ok</string>
     <string name="dialog_action_ok_selected">Selecionou ok</string>
     <string name="dialog_action_cancel">cancelar</string>
+
     <string name="snackbar_message">Que bonito</string>
     <string name="snackbar_action_thanks">Obrigado</string>
     <string name="snackbar_action_thanks_selected">Selecionou obrigado</string>
     <string name="evora">Evora</string>
     <string name="_0">0</string>
 
+    <string name="main_menu_home">Casa</string>
+    <string name="main_menu_breeds">Raça</string>
+    <string name="main_menu_favourites">Favoritos</string>
+    <string name="main_menu_about">Sobre</string>
+    <string name="description_image">Imagem</string>
 </resources>

@@ -21,9 +21,9 @@
 
     <string name="time_remaining">Remaining %d seconds</string>
     <string name="time_done">Finished!</string>
-    <string name="ShowDialog">Show Dialog</string>
-    <string name="ShowSnackBar">Show Snack-bar</string>
-    <string name="start_Timer">Start</string>
+    <string name="show_dialog">Show dialog</string>
+    <string name="show_snackbar">Show snackbar</string>
+    <string name="start_timer">Start</string>
     <string name="dialog_title" >Good</string>
     <string name="dialog_message" >Nice course</string>
     <string name="dialog_action_ok" >OK</string>
@@ -36,5 +36,9 @@
     <string name="evora">Evora</string>
     <string name="_0">0</string>
 
-
+    <string name="main_menu_home">Home</string>
+    <string name="main_menu_breeds">Breeds</string>
+    <string name="main_menu_favourites">Favourites</string>
+    <string name="main_menu_about">About</string>
+    <string name="description_image">Image</string>
 </resources>

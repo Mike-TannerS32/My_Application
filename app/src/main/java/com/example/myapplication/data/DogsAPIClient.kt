@@ -23,7 +23,7 @@ object DogsAPIClient {
     fun getListOfBreeds(listener: DataRetriever){
         apiDog.getBreedsList().enqueue(object : Callback<List<Breed>>{
             override fun onResponse(call: Call<List<Breed>>, response: Response<List<Breed>>) {
-                Log.d(Tag, "onRespose: ${response.body()}")
+                Log.d(Tag, "onResponse: ${response.body()}")
                 if(response.isSuccessful){
                 listener.onDataFetchSuccess(response.body()!!)
                 }
