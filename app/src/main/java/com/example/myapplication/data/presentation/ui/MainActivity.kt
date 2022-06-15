@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         loadFragment(homeFragment)
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
-        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+        bottomNavigationView.setOnItemSelectedListener { item ->
             when (item.itemId) {
 
                 R.id.home -> {

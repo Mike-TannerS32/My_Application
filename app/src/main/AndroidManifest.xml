@@ -15,7 +15,7 @@
         android:requestLegacyExternalStorage="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".data.presentation.ui.LoginActivity"
+            android:name=".data.presentation.compose.AboutActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
