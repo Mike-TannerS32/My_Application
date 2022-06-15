@@ -3,6 +3,7 @@ package com.example.myapplication.data.presentation.compose
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
+
 class AboutActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
